@@ -1,0 +1,29 @@
+# pycache
+**/__pycache__/
+
+# database
+**/storage/
+
+# complied python files
+*.pyc
+
+# ide
+.idea/
+.vscode/
+
+# temporary files
+**/tmp/
+
+# logs
+*.log
+
+# virtual environment
+venv/
+
+
+# dotenv
+.env
+
+# database
+*.sqlite3
+*.db
