@@ -57,7 +57,7 @@ class CacheObject:
             with open(self._localdb) as f:
                 self._cache = json.load(f)
         else:
-            with open(self._localdb, 'w') as f:
+            with open(self._localdb, 'w+') as f:
                 json.dump(self._cache, f)
 
     def set(self, key, value):
@@ -85,8 +85,13 @@ class CacheObject:
             return
         # with lock
         with self._mutex:
-            with open(self._localdb, 'w') as f:
+            with open(self._localdb, 'w+') as f:
                 json.dump(self._cache, f)
 
-    def __del__(self):
+    def __getitem__(self, key):
+        return self.get(key)
+    
+    def __setitem__(self, key, value):
+        self.set(key, value)
         self.submit()
+    
