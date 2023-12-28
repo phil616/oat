@@ -9,11 +9,12 @@ An automated office toolkit that provides Windows processing APIs
 3. Web API provide
 4. Simulate IO operations
 
-## TODOs
+## Features
 
-- [ ] Automation Scripts
-- [ ] Web API
-- [ ] GUI
+* Game booster
+* Auto click
+* Operation handler
+* WeChat automation
 
 ## License
 

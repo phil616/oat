@@ -1,5 +1,5 @@
 import uvicorn
-from web_interface.asgi_app import asgi_application
+from asgi.asgi_app import asgi_application
 from app_setting import config
 
 

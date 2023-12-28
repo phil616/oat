@@ -1,7 +1,7 @@
 import unittest
 from fastapi.testclient import TestClient
 
-from web_interface import asgi_app  # assuming your FastAPI app is defined here
+from asgi import asgi_app  # assuming your FastAPI app is defined here
 
 class TestHTTP(unittest.TestCase):
     def setUp(self):
